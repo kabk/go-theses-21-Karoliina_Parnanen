@@ -34,13 +34,13 @@ mark {
 
 body {
   background-color: white;
+  width: 100vw;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   cursor: zoom-in;
   font-size: 20px;
   font-family: 'nimbus-sans', sans-serif;
-  margin-right: -26px;
 }
 
 img {
@@ -190,7 +190,6 @@ a:active {
   cursor: ns-resize;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  padding-right: ;
   /* Increase/decrease this value for cross-browser compatibility */
   box-sizing: content-box;
   /* So the width will be 100% + 17px */
@@ -198,7 +197,6 @@ a:active {
   max-height: 90vh;
   hyphens: auto;
   hyphenate-limit-chars: 6 3 3;
-  margin: auto;
   background-color: white;
   color: #2c2c2d;
   padding: 5%;
