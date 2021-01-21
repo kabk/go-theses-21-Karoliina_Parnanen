@@ -119,6 +119,7 @@ a:active {
   line-height: 0.815;
   color: blue;
   overflow: visible;
+  word-spacing: 60%;
 }
 
 /*APRREARING BOXES*/
@@ -149,6 +150,7 @@ a:active {
   text-align: center;
   line-height: 0.815;
   overflow: visible;
+  word-spacing: 60%;
 }
 
 .quote {
