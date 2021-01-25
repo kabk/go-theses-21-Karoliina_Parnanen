@@ -7,17 +7,22 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Karoliina Mobile Thesis</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.typekit.net/tio0ocu.css">
   <!--fonts-->
-  <link rel="stylesheet" type="text/css" href="./csshake-slow.css">
+  <link rel="stylesheet" type="text/css" href="css/csshake-slow.css">
+  <link rel="stylesheet" type="text/css" href="css/bigfoot-default.css">
+  <link rel="stylesheet" type="text/css" href="css/bigfoot-default.scss">
+  <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.min.css'>-->
+  <!--<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/bigfoot-default.css'>-->
+  <link rel="stylesheet" href="css/style.css">
   <!--shake animations-->
 
 </head>
 
 <body>
 
-<!--<span style="font-size:50px; color: black; position:fixed;" onclick="openNav()">☰ </span>
+  <!--<span style="font-size:50px; color: black; position:fixed;" onclick="openNav()">☰ </span>
 
   <div id="mySidenav" class="sidenav" style="width: 0px;">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -30,22 +35,32 @@
   <a href="#bibliography">Bibliography</a>
 </div>-->
 
-<div class="topnav" id="navbar">
-  <a href="#introduction"><mark>Introduction</mark></a><br>
-  <a href="#hyperhyperhyper"><mark>1. Hyperhyperhyper</mark></a><br>
-  <a href="#rewardmechanisms"><mark>2. Rewards Mechanisms and the Quest for Happiness</mark></a><br>
-  <a href="#colonizedcognition"><mark>3. Colonized Cognition in the Age of the Algorithm</mark></a><br>
-  <a href="#manifesto"><mark>4. Hypoconnectivist Manifesto</mark></a><br>
-  <a href="#demandforchange"><mark>Conclusion: Demand For Change</mark></a><br>
-  <a href="#bibliography"><mark>Bibliography</mark></a><br>
-  <br>
-</div>
+  <div class="topnav" id="navbar">
+    <a class="nav navbubble" href="#introduction">Introduction</a><br>
+    <a class="navbubble" style="margin-bottom: 2px;" href="#hyperhyperhyper">1. Hyperhyperhyper</a><br>
+    <a href="#rewardmechanisms"><p class="navbubble reduced" style="margin-bottom:5px; margin-top: 2px; width: 58%;">2. Rewards Mechanisms and <br> the Quest for Happiness</p></a>
+    <a href="#colonizedcognition"><p class="navbubble reduced" style="margin-bottom:3px; width: 55%;">3. Colonized Cognition in <br>the Age of the Algorithm</p></a>
+    <a class="navbubble" href="#manifesto">4. Hypoconnectivist Manifesto</a><br>
+    <a class="navbubble" href="#demandforchange">Conclusion: Demand For Change</a><br>
+    <a class="navbubble" href="#bibliography">Bibliography</a><br>
+    <br>
+  </div>
 
 
   <!-- partial:index.partial.html -->
   <div class="zoom">
     <div class="zoom-section">
-      <div class="shake-slow"><img class="email" src="images/email.png" /></div>
+      <div class="shake-slow shake-constant"><img style="max-height:70vh" src="images/nocallerid.png" /></div>
+    </div>
+    <div class="zoom-section">
+    </div>
+    <div class="zoom-section">
+      <div class="shake-slow shake-constant"><img class="email" src="images/notifications.png" /></div>
+    </div>
+    <div class="zoom-section">
+      <div class="shake-slow shake-constant"><img class="email" src="images/email.png" /></div>
+    </div>
+    <div class="zoom-section">
     </div>
     <div class="zoom-section title">
       <p>{URGENT}</p>
@@ -53,8 +68,8 @@
     <div class="zoom-section title">
       <p>Click now!</p>
     </div>
-    <div class="zoom-section title">
-      <p>3,5 minutes of your attention left!</p>
+    <div class="zoom-section title small-title">
+      <p><small>3,5 minutes of your attention left!</small></p>
     </div>
     <div class="zoom-section">
       <span class="dot"></span>
@@ -64,6 +79,14 @@
     </div>
     <div class="zoom-section">
       <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
     </div>
     <div class="zoom-section heading" id="introduction">
       <p>Introduction</p>
@@ -75,7 +98,9 @@
           mail,
           weather forecast, clock, calculator any other thinkable technology of the not-so-distant past. These individual technologies are now consumed in a layered, unified environment of open windows, digital chimes, blinking ads and popping
           notifications. Since information online is often compressed and designed to be as attention-grabbing, clickable and shareable as possible, our brain also learns to absorb it in a different way — quickly, superficially and horizontally. This
-          crucial relationship between the medium and the message was already introduced by Marshall McLuhan in his seminal text “Medium Is The Message”.<sup>1</sup> Due to the ubiquity of portable smart devices and internet-of-things (IoT) in our
+          crucial relationship between the medium and the message was already introduced by Marshall McLuhan in his seminal text <i>Medium Is The Message</i>
+          <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.
+          Due to the ubiquity of portable smart devices and internet-of-things (IoT) in our
           homes and public spaces, the algorithmic way of experiencing the world becomes ever more prevalent. We increasingly externalize our thinking and decision-making power to the computer, gradually making the uncomputable the unthinkable,
           hindering our imagination beyond the realm of computation.
           <br><br>
@@ -93,7 +118,8 @@
           Over the past years I have become increasingly aware of the alienating effects of a hyperconnected life on the mind. Like a computer infected by a virus, thoughts enter the awareness like unwanted popups, flooding the operation system with
           constant interruptions. It’s like someone has been messing with the mind’s system preferences making the interface harder and harder to operate. The back-end of the mind is rendered opaque, while the front-end is coded incomprehensible. The
           routing of the brain gets more and more complex since it constantly connects to an increasing amount of networks, devices and communication channels. Floating on the surface of this ungraspable network, the disoriented and hyperstimulated
-          brain often resorts to the reactions of the so-called “lizard brain,” that governs functions such as primitive emotional responses, habit-formation, fighting, fleeing, feeding and reproduction.<sup>2</sup>
+          brain often resorts to the reactions of the so-called “lizard brain,” that governs functions such as primitive emotional responses, habit-formation, fighting, fleeing, feeding and reproduction
+        <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.
           <br><br>
           Processing the continuous flow of requests, alerts and reminders at maximum power, the mind can at its best enter a temporary sleep mode, but is never truly allowed to shut down <b>figure5</b>. The distinction between work and leisure, fact
           and fiction, dreams and reality becomes ever more obsolete in the age of persuasive artificial intelligence (AI), fake news and deepfakes. Like being attached to the strings of a puppeteer, our thoughts, emotions and actions are being
@@ -104,7 +130,8 @@
           <br><br>
           Together the five American tech giants Apple, Amazon, Alphabet Inc., Microsoft and Facebook earn almost the total gross-domestic product (GDP) of Netherlands, leaving behind other rich countries like Switzerland and Saudi Arabia, making
           them
-          economically more powerful than most nations of the world.<sup>3</sup>
+          economically more powerful than most nations of the world
+          <sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.
           <br><br>
           The idea that our thoughts, feelings and desires could be controlled without our awareness used to sound like science fiction. Today, it has become a reality, backed up with a body of research claiming that machine intelligence affects
           human
@@ -122,14 +149,6 @@
           <br><br>
         </p>
       </div>
-      <div class="footnotes">
-        1. Marshall McLuhan, “Medium Is the Message,” in <i>Understanding Media; the Extensions of Man</i>, (New York: Signet Books, 1964), 7–23.<br>
-        <br>
-        2. Andreas Komninos, “Our Three Brains — The Reptilian Brain,” <i>Interaction Design Foundation</i>, last modifed March, 2020, www.interaction-design.org/literature/article/our-three-brains-the-reptilian-brain.<br>
-        <br>
-        3. “Most Valuable Companies In The World – 2020,” <i>FXSSI</i>, last modified November 3, 2020, fxssi.com/top-10-most-valuable-companies-in-the-world.<br>
-      </div>
-      </p>
     </div>
     <div class="zoom-section">
       <div class="wrapper">
@@ -144,9 +163,8 @@
       <p>Hyper<br>hyper<br>hyper</p>
     </div>
     <div class="zoom-section text text inner-shadow">
-      <p class="subheading">Confessions of a <br>Hyperconnected Cognitariat</p>
-      <div class="script">
-        Eagerly agreeing to the terms and conditions,<br>
+      <img class="poem-image" src="images/poem1small.png" /><br>
+      <!--Eagerly agreeing to the terms and conditions,<br>
         I sell my self-sufficiency to satisfy my need for simplicity.<br>
         Oh, the soothing soundtracks of Netflix series,<br>
         the swipes of fingers on slick screens, <br>user-specific search suggestions<br>
@@ -213,9 +231,8 @@
         Bits and bytes race through my mind <br>as I connect to the network to Google my future colleagues.<br>
         Ten layers deep into random people’s profiles <br>I hear the elevator beep.<br>
         Whose domain is this? Where was I going?<br>
-        How long have I been here?<br>
-        <br>
-      </div>
+        How long have I been here?<br>-->
+      <br>
     </div>
 
     <div class="zoom-section">
@@ -225,8 +242,8 @@
       <p class="subheading">Affects of a Hyperconnected Lifestyle on an Individual</p>
       <br>
       <p>Most of us have at least occasionally felt overwhelmed by life in the 21st century attention economy. Attention economy refers to the current state of the economy, where companies are increasingly competing for users’ attention, which has
-        become the most valuable resource of the digital age.
-        <sup>4</sup> In today’s society information is abundant, but attention is scarce, which makes the modern economy increasingly revolve around the human attention span. Companies spend increasing
+        become the most valuable resource of the digital age
+<sup id="fnref:4"><a href="#fn:4" class="footnote">3</a></sup>. In today’s society information is abundant, but attention is scarce, which makes the modern economy increasingly revolve around the human attention span. Companies spend increasing
         efforts in finding ways how to best capture our attention for the generation of profit. An apt visualization of the complexities of living in the age of attention economy and social media can be seen in the film “Possessed,” directed
         Metahaven
         and Rob Schröder <b>figure6</b>.
@@ -248,19 +265,19 @@
         <br><br>
         The hyperconnected lifestyle extends itself also beyond mindless social media scrolling. Being the perfect example of a 21st century international freelancer, I operate between multiple countries, time-zones and industries, with a majority of
         my work being initiated and executed in or via an online environment. The gig economy has made working contracts and conditions flexible but at the same time precarious. Workers are increasingly expected to be always on call waiting for the
-        next assignment, working globally on multiple time zones without fixed working hours, creating a “24/7 work-day”.
-        <sup>5</sup>
+        next assignment, working globally on multiple time zones without fixed working hours, creating a “24/7 work-day”
+<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup>.
         <br><br>
-        The experience of time becomes almost “instantaneous,” consisting of inconceivably brief and fragmented instants where the fast-paced, non-linear social and technological relationships replace the linear logic of clock-time.
-        <sup>6</sup> Sense of
-        time and space mend into an nonrhythmic pulsation where on one end huge chunks of time are getting sucked into online wormholes, and on the other end time slows down in the moments of insomnia or in the face of a focus-intensive task such as
+        The experience of time becomes almost “instantaneous,” consisting of inconceivably brief and fragmented instants where the fast-paced, non-linear social and technological relationships replace the linear logic of clock-time
+<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup>.
+Sense of time and space mend into an nonrhythmic pulsation where on one end huge chunks of time are getting sucked into online wormholes, and on the other end time slows down in the moments of insomnia or in the face of a focus-intensive task such as
         in-depth reading or writing.
         <br><br>
-        Like Pascal Gielen aptly described: “In a corporate world, society is losing its time to dig deep. Not obstinacy, stubbornness and steadfastness, but adaptability, flexibility and mobility allow people to survive in a global network
+        Like Pascal Gielen aptly described: <mark>In a corporate world, society is losing its time to dig deep. Not obstinacy, stubbornness and steadfastness, but adaptability, flexibility and mobility allow people to survive in a global network
         configuration. Today, we have to take the witticism ‘Time is Money’ literally. Time is no longer determined by a place or a local polis, but by virtual money flows which stream in high speed around the globe. This leads to the speeding-up of
         fast changing connections, in which we not only lose depth, but also height. Consequently, having ‘no time’ means that you don’t have the time to stand still by yourself. Time for (self)reflectivity is shrinking, also the time to stand above
-        yourself, looking at yourself while you operate in the world”.
-        <sup>7</sup>
+        yourself, looking at yourself while you operate in the world”</mark>
+        <sup id="fnref:7"><a href="#fn:7" class="footnote">7</a></sup>.
         <br><br>
         In the competition of everyday life, consideration of the long-term consequences of one’s actions gets pushed to the back of the mind. People are forced into a situation where they are responsible only for themselves and their own survival.
         The
@@ -272,16 +289,29 @@
         and
         opportunistically anticipate the constantly changing and unpredictable working environment. This makes the neoliberal freelancer fall on the mercy of the here-and-now, making it impossible to attain any long-term perspective.
         <br><br>
-        <div class="footnotes">
-          4. Ally Mintzer, “Paying Attention: The Attention Economy,” <i>Berkeley Economic Review</i>, last modified March 31, 2020, econreview.berkeley.edu/paying-attention-the-attention-economy/, last accessed December 7, 2020.
-          <br><br>
-          5. Jonathan Crary, <i>24/7: Late Capitalism and the Ends of Sleep</i>, (London: Verso, 1999), 33.
-          <br><br>
-          6. John Urry, <i>Sociology Beyond Societies: Mobilities for the Twenty-First Century</i>, (London and New York: Routledge, 1999), 137.
-          <br><br>
-          7. Pascal Gielen, “A Chronotopy of Post-Fordist Labor,” in <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich, (Archive Books, 2014), 195–196.
-        </div>
       </p>
+    </div>
+
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/possessed2.jpeg" />
+        <div class="caption"><b>figure6</b> Screenshot from the film <i>Possessed</i>, 2018, where Metahaven & Rob Schröder blend together an essayistic collage exploring togetherness and the human self in the age of social media.
+        </div>
+      </div>
+    </div>
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/imaydestroyyou.jpg" />
+        <div class="caption"><b>figure7</b> Michaela Coel. <i>I May Destroy You</i>, 2020. Screenshot from television series, HBO.
+        </div>
+      </div>
+    </div>
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/paris.jpg" />
+        <div class="caption"><b>figure8</b> Paris Hilton & Alexandra Dean (director). <i>This Is Paris</i>, 2020. Screenshot from YouTube release, uploaded by Paris Hilton.
+        </div>
+      </div>
     </div>
 
     <div class="zoom-section"></div>
@@ -291,8 +321,9 @@
       <br>
       <p>I believe our dogmatic belief in free human will might be the biggest mistake we are making in the 21st century. We are a society stuck on an outdated 18th century Enlightenment philosophy, where “free” human will was seen as the source of
         all
-        truth. In the light of new science, we know how the most primitive parts of our brain can be effectively persuaded to act on a pre-programmed impulse.
-        <sup>8</sup> Since our impulsive reactions ignite deep in the brain below the surface our
+        truth. In the light of new science, we know how the most primitive parts of our brain can be effectively persuaded to act on a pre-programmed impulse
+        <sup id="fnref:8"><a href="#fn:8" class="footnote">8</a></sup>.
+        Since our impulsive reactions ignite deep in the brain below the surface our
         cognition, we are mostly unaware of our behavior being manipulated.
         <br><br>
         The new persuasive technologies have raised a concern of how they will affect our thinking, our attentional capacities, our emotions and our behavior. 40 years from the popularisation of the personal computer and 13 years from the release of
@@ -300,17 +331,19 @@
         freedom and power of the tech companies combined with little regulation, the information revolution has become the most extensive psychological experiment ever run on humanity. Attention-grabbing persuasive technology is creating an
         unprecedented force of bio- and psychopower that neurologically captures an entire generation’s attention through the means of neuromarketing that aims to interfere with the consumers’ decision-making processes <b>figure9</b>.
         <br><br>
-        <img class="text-image" src="images/heatmap.png" /><br>
-        <p class="caption"><b>figure9</b> Sticky by Tobii Pro is a neuromarketing product using webcam eyetracking to better understand consumer attention. Here shown an example of a Smartwater advertisement eye-tracking heatmap. Date unknown.<br><br></p>
-
         Before shifting up our gears to the next level of machine intelligence and automated cognition, it’s of utmost urgency to investigate our current relationship with technology. The hazardous business models must be eliminated in order to steer
         away from the abusive path we have recently strayed upon. Regaining agency in our decision-making processes, remastering our focus and rediscovering values beyond eternal growth, efficiency and productivity must become the main goals of
         society.
         <br><br>
-        <div class="footnotes">
-          8. Yuval Noah Harari, <i>21 Lessons For The 21st Century</i>, (VINTAGE, 2019) 16–17.
-        </div>
       </p>
+    </div>
+
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/heatmap.png" /><br>
+        <p class="caption"><b>figure9</b> Sticky by Tobii Pro is a neuromarketing product using webcam eyetracking to better understand consumer attention. Here shown an example of a Smartwater advertisement eye-tracking heatmap. Date
+          unknown.<br><br></p>
+      </div>
     </div>
 
 
@@ -319,8 +352,8 @@
     <!--CHAPTER 2------------>
     <div class="zoom-section heading" id="rewardmechanisms">Reward Mechanisms and the Quest for Happiness</div>
     <div class="zoom-section quote">
-      “If you are not paying for the product, you are the product.” <br>
-      The Social Dilemma, 2020
+      <p>If you are not paying <br>for the product,<br> you are the product.<br>
+        <small>The Social Dilemma, 2020</small></p>
     </div>
     <div class="zoom-section text inner-shadow">
       <p class="subheading">Technology, psychology and neuroscience harnessed against us</p>
@@ -329,112 +362,136 @@
         devices. Neuroscience has shown how our dopamine and serotonin release can be triggered, which makes us return to our devices like a gambling addict to a slot machine. In fact, both are built with the simple-but-addictive mechanism of
         frequently checking for “wins,” be it money or likes, that give us our hit of habit-forming feel-good hormones.
         <br><br>
-        Behavioral psychologist B.F. Skinner found already in the 1930s that rats and pigeons could be trained to repeat certain behavior based on punishment and reward see <b>figure10</b>.
-        <sup>9</sup> He also found out that they responded most frequently to reward-associated stimuli when the reward was received in an unpredictable manner. As long as the effort for checking for rewards is not too big, rats — and humans — will
+        Behavioral psychologist B.F. Skinner found already in the 1930s that rats and pigeons could be trained to repeat certain behavior based on punishment and reward see <b>figure10</b>
+        <sup id="fnref:9"><a href="#fn:9" class="footnote">9</a></sup>.
+        He also found out that they responded most frequently to reward-associated stimuli when the reward was received in an unpredictable manner. As long as the effort for checking for rewards is not too big, rats — and humans — will
         end up checking for rewards habitually. This knowledge from behavioral psychology is utilized by slot machines and social media algorithms alike. Instagram’s algorithm enforces engagement by using the brain’s reward mechanisms and their
         pattern-enforcing abilities. When receiving a sudden reward after an initially negative outcome, our brain responds to the surprising reward stronger than it would respond to a continuous flow of small rewards. This is why Instagram sometimes
-        withholds likes to produce an initial disappointment, only to be rewarded with a big amount of likes later. This trains users to check their phones often in the hope of an unexpected sudden reward.
-        <sup>10</sup>
+        withholds likes to produce an initial disappointment, only to be rewarded with a big amount of likes later. This trains users to check their phones often in the hope of an unexpected sudden reward
+        <sup id="fnref:10"><a href="#fn:10" class="footnote">10</a></sup>.
         <br><br>
         Our reward mechanisms are tuned into grasping anything that makes us feel good, not necessarily what is good for us. Social media provides large quantities of easily accessible hyperstimulating activities that trigger the reward mechanisms of
         the brain. Dopamine, a neurotransmitter and a hormone, is not only involved in making us feel good, but it also tends to reinforce behavior and restructure brain-circuits so that we are more likely to engage in dopamine-releasing behavior
-        over and over again.<sup>11</sup> If we wish to shift the way our brain works, the first step is always through changing our behavior that ultimately transforms the architecture of our brains.
-        <sup>12</sup>
+        over and over again
+        <sup id="fnref:11"><a href="#fn:11" class="footnote">11</a></sup>. If we wish to shift the way our brain works, the first step is always through changing our behavior that ultimately transforms the architecture of our brains
+        <sup id="fnref:12"><a href="#fn:12" class="footnote">12</a></sup>.
         <br><br>
         Although dopamine is closely related to our brain’s reward mechanisms, it’s too simple to call dopamine a “feel-good” hormone. In fact, the precise role of dopamine in the brain is still partly unclear, but we know it participates in several
-        functions related to motivation, willingness of putting effort into reaching goals and gaining rewards see <b>figure11</b>.
-        <sup>13</sup> Dopamine behaves in the brain like any other substance — the more often we engage in dopamine-releasing behavior the more motivated we are to seek out for increasing quantities of that behavior, needing ever-higher doses of
+        functions related to motivation, willingness of putting effort into reaching goals and gaining rewards see <b>figure11</b>
+        <sup id="fnref:13"><a href="#fn:13" class="footnote">13</a></sup>.
+        Dopamine behaves in the brain like any other substance — the more often we engage in dopamine-releasing behavior the more motivated we are to seek out for increasing quantities of that behavior, needing ever-higher doses of
         stimulation in order to achieve the same level of satisfaction. Unlike one might think, neurological research shows that humans alongside with other mammals form their essential relationship to their environment not by obtaining food or
-        engaging in other life-maintaining activities, but rather by extracting sensory stimulation from their environment to modify mood and body states.
-        <sup>14</sup> This makes psychotropic activity the main biological imperative that societies are driven by. Eating food, just like getting likes on Instagram, becomes an activity of mood-modification through the release of dopamine in the
+        engaging in other life-maintaining activities, but rather by extracting sensory stimulation from their environment to modify mood and body states
+        <sup id="fnref:14"><a href="#fn:14" class="footnote">14</a></sup>.
+        This makes psychotropic activity the main biological imperative that societies are driven by. Eating food, just like getting likes on Instagram, becomes an activity of mood-modification through the release of dopamine in the
         brain, making us prone to re-engage in this behavior.
         <br><br>
         This compelling biological drive for pursuing sensory stimulation is used by tech companies who design machine learning algorithms to feed our craving for mood-altering stimuli. We spiral into compulsive, dopamine-fuelled interaction with
-        social platforms, where the commercially driven algorithms mostly pursue one fundamental goal: to maximize the amount of time spent on the platform.
-        <sup>15</sup> More time spent equals more data, and more data equals more money from advertisers who wish to benefit from interfering in our decision-making processes.
+        social platforms, where the commercially driven algorithms mostly pursue one fundamental goal: to maximize the amount of time spent on the platform
+        <sup id="fnref:15"><a href="#fn:15" class="footnote">15</a></sup>.
+        More time spent equals more data, and more data equals more money from advertisers who wish to benefit from interfering in our decision-making processes.
         <br><br>
-        Like said in the 2020 Netflix documentary “The Social Dilemma” <b>figure12</b>: “If you are not paying for the product, you are the product.”
-        <sup>16</sup> And it’s not because anyone is evil or has bad intentions. It’s because there’s an economical incentive to get our attention at all costs, which ultimately becomes a race to the bottom of the brainstem — a race to the most
-        primitive emotions that grab our attention the easiest <b>figure15</b>. A world ruled by our most primitive emotions is hardly a world anyone wants to live in, especially when we know that negative emotions such as fear and anger make a
-        bigger and thus more profitable impact than their positive counterparts.
-        <sup>17</sup>
+        Like said in the 2020 Netflix documentary <i>The Social Dilemma</i> <b>figure12</b>: <mark>If you are not paying for the product, you are the product</mark>
+        <sup id="fnref:16"><a href="#fn:16" class="footnote">8</a></sup>.
+        And it’s not because anyone is evil or has bad intentions. It’s because there’s an economical incentive to get our attention at all costs, which ultimately becomes a race to the bottom of the brainstem — a race to the most
+        primitive emotions that grab our attention the easiest <b>figure13</b>. A world ruled by our most primitive emotions is hardly a world anyone wants to live in, especially when we know that negative emotions such as fear and anger make a
+        bigger and thus more profitable impact than their positive counterparts
+        <sup id="fnref:17"><a href="#fn:17" class="footnote">17</a></sup>.
         <br><br>
-        A study by Gloria Mark at the University of California shows that on average it takes us a whopping 23 minutes to refocus after any interruption.
-        <sup>18</sup> The same study shows that the more we get interrupted the more we become conditioned to interrupt ourselves, which we do on average in every 3.5 minutes.
-        <sup>19</sup> It has been shown that heavy multitaskers perform worse in various cognitive tests than people who multitask less.
-        <sup>20</sup> Paradoxically, multitaskers are also less capable of switching between tasks compared to the infrequent multitaskers.
-        <sup>21</sup>
+        A study by Gloria Mark at the University of California shows that on average it takes us a whopping 23 minutes to refocus after any interruption
+        <sup id="fnref:18"><a href="#fn:18" class="footnote">18</a></sup>.
+        The same study shows that the more we get interrupted the more we become conditioned to interrupt ourselves, which we do on average in every 3.5 minutes
+        <sup id="fnref:19"><a href="#fn:19" class="footnote">19</a></sup>.
+        It has been shown that heavy multitaskers perform worse in various cognitive tests than people who multitask less
+        <sup id="fnref:20"><a href="#fn:20" class="footnote">20</a></sup>.
+        Paradoxically, multitaskers are also less capable of switching between tasks compared to the infrequent multitaskers
+        <sup id="fnref:21"><a href="#fn:21" class="footnote">21</a></sup>.
         <br><br>
-        A typical person checks their phone every 15 minutes or less, and half of the time there is no alert or notification to trigger this action.
-        <sup>22</sup> This happens because putting down our phone produces a stress hormone called cortisol in the brain that triggers a fight-or-flight response. This response gave us the ability to be hyper-aware and quickly shift our focus from
+        A typical person checks their phone every 15 minutes or less, and half of the time there is no alert or notification to trigger this action
+        <sup id="fnref:22"><a href="#fn:22" class="footnote">22</a></sup>.
+        This happens because putting down our phone produces a stress hormone called cortisol in the brain that triggers a fight-or-flight response. This response gave us the ability to be hyper-aware and quickly shift our focus from
         one thing to another, which used to be crucial for our survival in order to not be eaten by predators or not to bypass a source of food in our immediate surroundings. Now, the same hormonal response makes us pointlessly hyper-aware and eager
-        to know whether we’ve got new likes in social media. The impulsion to relieve us from this cortisol-induced anxiety is the underlying reason why we compulsively check our phones.
-        <sup>23</sup>
+        to know whether we’ve got new likes in social media. The impulsion to relieve us from this cortisol-induced anxiety is the underlying reason why we compulsively check our phones
+        <sup id="fnref:23"><a href="#fn:23" class="footnote">23</a></sup>.
         <br><br>
         Every medium develops some cognitive skills at the expense of others. While screen-based media has strengthened our visual-spatial intelligence, it has also diminished some of our higher order cognitive-processes, such as critical thinking,
-        inductive problem solving, imagination, reflection, abstract vocabulary and mindfulness.
-        <sup>24</sup> At birth we are born with an overabundance of unassigned synapses, waiting for interaction with the environment to connect them into functioning circuits producing new behavior patterns and knowledge while the inactive synapses
+        inductive problem solving, imagination, reflection, abstract vocabulary and mindfulness
+        <sup id="fnref:24"><a href="#fn:24" class="footnote">24</a></sup>.
+        At birth we are born with an overabundance of unassigned synapses, waiting for interaction with the environment to connect them into functioning circuits producing new behavior patterns and knowledge while the inactive synapses
         get gradually eliminated. The development of the brain in the post-natal period is a neurological Darwinian selection process that defines the most crucial functions for the rest of the life.
         <br><br>
-        Even at adulthood our brains are populated with adjustable nervous elements and synapses whose function are yet to be determined.
-        <sup>25</sup> This population forms the possibility for brain plasticity, adjusting itself based on its interaction with the culture milieu. The neural elements most in sync with the environment get amplified, while the least synchronized
-        ones fade away, gradually reshaping the architecture of the brain.
-        <sup>26</sup> In the long run, the occurrence of variance in the brain results in gradual emergence of traits in the evolution of the brain and the whole species over generations. This is also called the “Baldwin effect,” in which change
-        occurring in an organism as a result of its interaction with its environment becomes gradually assimilated into its developmental genetic repertoire.
-        <sup>27</sup>
+        Even at adulthood our brains are populated with adjustable nervous elements and synapses whose function are yet to be determined
+        <sup id="fnref:25"><a href="#fn:25" class="footnote">25</a></sup>.
+        This population forms the possibility for brain plasticity, adjusting itself based on its interaction with the culture milieu. The neural elements most in sync with the environment get amplified, while the least synchronized
+        ones fade away, gradually reshaping the architecture of the brain
+        <sup id="fnref:26"><a href="#fn:26" class="footnote">26</a></sup>.
+        In the long run, the occurrence of variance in the brain results in gradual emergence of traits in the evolution of the brain and the whole species over generations. This is also called the “Baldwin effect,” in which change
+        occurring in an organism as a result of its interaction with its environment becomes gradually assimilated into its developmental genetic repertoire
+        <sup id="fnref:27"><a href="#fn:27" class="footnote">27</a></sup>.
         <br><br>
         Online platforms have introduced a significant new culture milieu that contributes to the subsequent brain development across the world. Since the most popular online environments are produced by a few international data monopolies, we
         inevitably shift towards a more unified global culture where the offline environment dances to the tireless machinic beat of the online world. The huge influence of the environment to our brain development gives significant bio- and
         neuropower to the owners and designers of the most prevalent digital environments that people around the world interact with on a daily basis.
         <br><br>
-        <div class="footnotes">
-          9. Darrin Perez, “Skinner’s Box and Video Games: How to Create Addictive Games.” LevelSkip, last modified September 4, 2020, www.levelskip.com/how-to/Skinners-Box-and-Video-Games.
-          <br><br>
-          10. Anderson Cooper, “What Is ‘Brain Hacking’? Tech Insiders On Why You Should Care,” <i>CBS News</i>, last edited June 11, 2017, www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/.
-          <br><br>11. Andrew Huberman, “Change Your Brain: Neuroscientist Dr. Andrew Huberman | Rich Roll Podcast.” <i>YouTube</i>, uploaded by Rich Roll, July 20, 2020, www.youtube.com/watch?v=SwQhKFMxmDY&t=5984s.
-          <br><br>12. Ibid.
-          <br><br>13. Trevor Haynes, “Dopamine, Smartphones & You: A battle for your time,” <i>Harvard University Blog</i>, last edited May 1, 2018, sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/.
-          <br><br>14. Bruce Wexler, Brain and Culture: Neuorobiology, Ideology and Social Change, (Cambridge: MIT Press, 2006).
-          <br><br>15. The Social Dilemma, directed by Jeff Orlowski, (Exposure Labs, Argent Pictures & The Space Program, 2020), Netflix.
-          <br><br>16. Ibid.
-          <br><br>17. Jaron Lanier, <i>Ten Arguments for Deleting Your Social Media Accounts Right Now</i>, (New York: Henry Holt and Company, 2018), 27.
-          <br><br>18. Gloria Mark, <i>The cost of interrupted work: more speed and stress</i>, (CHI, 2008), 3.
-          <br><br>19. Ibid. 3.
-          <br><br>20. Melina Uncapher & Anthony Wagner, “Media multitasking, mind and brain.” <i>Proceedings of the National Academy of Sciences 115</i>, no. 40 (October 2, 2018) 9889-9896.
-          <br><br>21. Ibid. 9889.
-          <br><br>22. Mark, “The Cost of Interrupted Work,” 3.
-          <br><br>23. Cooper, “What is ‘Brain Hacking’?”
-          <br><br>24. Patricia Greenfield, “Technology and Informal Education: What Is Taught, What Is Learned,” <i>Science 323</i>, no. 5910 (January 2, 2009), 69.
-          <br><br>25. Warren Neidich, “The Brain Without Organs: Ayahuasca and the Theory of Neural Regression.” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, ed. Warren Neidich (Archive Books, 2017), 229.
-          <br><br>26. Ibid. 230.
-          <br><br>27. Charles Wolfe, “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project,” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich (Archive Books, 2014), 251.
-        </div>
       </p>
     </div>
+
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/skinner.png" />
+        <div class="caption"><b>figure10</b> <i>Skinner Box</i>. LevelsSkip, 2020. Behavioral psychology discovered that rats and pigeons could be conditioned to repeat desired behavior (pull a lever) after being conditioned by rewards (food) and
+          punishments (light electric current).
+        </div>
+      </div>
+    </div>
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/DopamineHarvard.jpg" />
+        <div class="caption"><b>figure11</b> <i>Three dopamine pathways and their related cognitive processes.</i> 2018. Harvard University. Most of your dopamine is generated deep in the midbrain, and it is released in many different areas across
+          the brain. These areas are largely responsible for behaviors associated with learning, habit formation, and addiction.
+        </div>
+      </div>
+    </div>
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/socialdilemma.jpg" />
+        <div class="caption"><b>figure12</b> Jeff Orlowski, <i>The Social Dilemma</i> (2020) portrays AI as a group of engineers working around the clock to keep you on your device.
+        </div>
+      </div>
+    </div>
+    <div class="zoom-section">
+      <div class="wrapper">
+        <img class="text-image" src="images/plutchik.png" />
+        <div class="caption"><b>figure13</b> Robert Plutchik. <i>Plutchik’s wheel of emotions.</i> 1980. Wikipedia. The central ring describes the most primitive human emotions.
+        </div>
+      </div>
+    </div>
+
 
     <div class="zoom-section text inner-shadow">
       <p class="subheading">Psychopathologies of Cognitive Capitalism</p>
       <p>In addition to the milder symptoms such as lack of focus, shallow thinking, stress and insomnia, certain distinct mental health disorders have become more prevalent in society, such as attention deficit disorder (ADD), autism, panic attacks,
-        depression, anxiety disorder and burnout.<sup>28, 29</sup> On one hand these psychopathologies are triggered by the experience of living in a phase of capitalism where the individual has to live with the anxieties and stress of continuously
+        depression, anxiety disorder and burnout
+        <sup id="fnref:28"><a href="#fn:28" class="footnote">28</a></sup>
+        <sup id="fnref:29"><a href="#fn:29" class="footnote">29</a></sup>.
+        On one hand these psychopathologies are triggered by the experience of living in a phase of capitalism where the individual has to live with the anxieties and stress of continuously
         adapting and readapting to the accelerated pace of new developments, while also dealing with the paranoia of constant surveillance <b>figure14</b> and uncertain, precarious and possibly lonely working conditions. On the other hand they are a
-        product of a feeling of alienation due to the neurobiological incapability of the brain to adapt to the accelerated pace of cultural plasticity and change.<sup>30</sup> The lack of adequate perceptual and cognitive processing of the
+        product of a feeling of alienation due to the neurobiological incapability of the brain to adapt to the accelerated pace of cultural plasticity and change
+        <sup id="fnref:30"><a href="#fn:30" class="footnote">30</a></sup>.
+        The lack of adequate perceptual and cognitive processing of the
         environment causes distress on the individual. Some neurologists see especially mild forms of these psychopathologies as a normative process of brain plasticity that opens windows to alternative creativity and understanding that eventually
-        reshapes the brain to be more suited for its environment.<sup>31, 32</sup> The era-specific psychopathologies paint a picture of how our bodies and minds attempt to cope with our environment.
+        reshapes the brain to be more suited for its environment
+        <sup id="fnref:31"><a href="#fn:31" class="footnote">31</a></sup>
+        <sup id="fnref:32"><a href="#fn:32" class="footnote">32</a></sup>.
+        The era-specific psychopathologies paint a picture of how our bodies and minds attempt to cope with our environment.
         <br><br>
         In the neoliberal world, available pharmaceuticals can make us wake up, fall asleep, boost performance, cope with stress, battle depression, flatten out mood swings and relieve us from the pain caused by non-mobility and unergonomic working
         conditions. While advancements in medicine bring undeniable benefits, they also raise a concern of how far we should psychotropically transform our natural state in order to fulfil the demands of ultimate performance. One cannot help but
         wonder whether the normalization of daily psychotropical medication ultimately leads towards a society of unified and normalized human beings, similar to that envisioned by Aldous Huxley in his cult classic novel <i>Brave New World</i>
         published in 1932, where laboratory-conceived and conditioned humans receive their salary as a happiness-inducing drug called “soma” that keeps society peaceful and content, but also makes people incapable of questioning the society around
         them <b>figure15</b>.
-<br><br>
-        <div class="footnotes">
-          28. Thomas Metzinger, <i>The Ego Tunnel: The Science of the Mind and the Myth of the Self</i>, (New York: Basic Books, 2009), 234.
-          <br><br>29. Gielen, “A Chronotopy of Post-Fordist Labor”, 196.
-          <br><br>30. Charles Wolfe, “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project,” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich, (Archive Books, 2014), 251.
-          <br><br>31. Matteo Pasquinelli, “The Power of Abtraction and its Antagonism: On Some Problems of Contemporary Neuroscience and the Theory of Cognitive Capitalism” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren
-          Neidich, (Archive Books, 2014), 279.
-          <br><br>32. Kurt Goldstein, <i>The Organism</i>, (New York: American Book Company, 1939).
-        </div>
+        <br><br>
+
       </p>
     </div>
 
@@ -455,8 +512,9 @@
     </div>
 
     <div class="zoom-section text inner-shadow">
-      <p class="subheading">Cosmetic Psychopharmacology</p>
-      <p>Some say that due to the popularization of different mood and performance-enhancing drugs, we have entered an era of “cosmetic psychopharmacology”<sup>33</sup> where medicine extends beyond curing illness <b>figure16</b>. Albeit responding
+      <p class="subheading">Cosmetic Psycho-<br>pharmacology</p>
+      <p>Some say that due to the popularization of different mood and performance-enhancing drugs, we have entered an era of “cosmetic psychopharmacology”
+        <sup id="fnref:33"><a href="#fn:33" class="footnote">33</a></sup> where medicine extends beyond curing illness <b>figure16</b>. Albeit responding
         to real human
         desires, cosmetic psychopharmacology also medicalizes aspects of normal human existence and treats existential questions as biochemical problems. If a biochemical drug makes people happy, can we derive that sadness is a biochemical
         dysfunction that should be treated? If people are unable to perform under high pressure and unreasonable workload, should this be fixed with a performance-enhancing pill <b>figure16, figure17</b>? If one’s life feels empty within the
@@ -464,24 +522,19 @@
         consumerism, treating this emptiness as an illness goes beside the point. On the contrary, a medically induced contentedness may prevent us from feeling the perhaps necessary unease of facing the consequences of our lifestyle on the planet.
         <br><br>
         The need that cosmetic psychopharmacology ultimately responds to, is the need to live up to society’s idea of a dignified and successful life. We all live within a certain framework of understanding that gives purpose to our actions. This
-        framework, which correlates with the values of the society where one lives in, gives an understanding of what counts as a good life and what counts as a failure.<sup>34</sup> It shows what kind of life is worth living, and most importantly,
+        framework, which correlates with the values of the society where one lives in, gives an understanding of what counts as a good life and what counts as a failure
+        <sup id="fnref:34"><a href="#fn:34" class="footnote">34</a></sup>. It shows what kind of life is worth living, and most importantly,
         what kind of
         a life provides purpose and meaning. Before, people worried about losing their honour, disobeying God or displeasing their ancestors. Now, people question whether there even exists a framework worth believing in. This uncertainty produces a
         novel feeling of psychological discomfort — a certain sense of emptiness, absurdity, vertigo and malaise.
         <br><br>
         Leading a meaningful and authentic life has become the central purpose for Western contemporary humans. Within the framework provided by neoliberal ideology, a meaningful life is achieved and the authentic self is discovered by pursuing a
         career, where the concept of work ultimately transforms into a moral quest for self-fulfilment. For the moral quest of happiness, social media becomes the perfect performance platform and a public proof of a happy and successful life. Like
-        Elliott aptly wrote: “If you are unhappy or find life unfulfilling, there is something wrong with you, and not only should you pursue happiness, you should pursue it aggressively. Why? Because if you don’t you will be letting yourself down.
-        You will be wasting the time you have on this earth. And if that means taking Prozac, so be it. In this way happiness is not just your right; it’s your duty.”<sup>35</sup>
+        Elliott aptly wrote: <mark>If you are unhappy or find life unfulfilling, there is something wrong with you, and not only should you pursue happiness, you should pursue it aggressively. Why? Because if you don’t you will be letting yourself
+          down.
+          You will be wasting the time you have on this earth. And if that means taking Prozac, so be it. In this way happiness is not just your right; it’s your duty</mark>
+          <sup id="fnref:35"><a href="#fn:35" class="footnote">35</a></sup>.
         <br><br>
-        <div class="footnotes">
-          33. Peter Kramer, <i>Listening to Prozac</i>, (New York: Penguin Books, 1994).
-          <br><br>
-          34. Carl Elliott, “The Tyranny of Happiness: Ethics and Cosmetic Psycho-pharmacology.” <i>Enhancing human traits: Ethical and Social Implications</i>,
-          ed. Erik Parens, (Georgetown University Press, 2000), 178.
-          <br><br>
-          35. Ibid. 187.
-        </div>
       </p>
     </div>
 
@@ -511,7 +564,7 @@
     <div class="zoom-section quote">
       <p>The gap between sensation, cognition, and action has become part of one continuous movement, whereby thinking to act
         is already an action.<br>
-        Luciana Parisi, 2017</p>
+        <small>Luciana Parisi, 2017</small></p>
     </div>
 
     <div class="zoom-section text inner-shadow">
@@ -521,31 +574,28 @@
         currency. In the name of profit, companies have increasing incentives to monitor and streamline our brain activity, simultaneously eliminating contingency from our behavior in order to improve predictability.
         <br><br>
         Attention economy has harnessed machine learning, databasing, pattern matching, searching and querying to the mission of governing the brain, reaching out to the unconscious levels of cognition and laying claims of what we should be thinking,
-        feeling and doing. Already in the 1960s the known media theorist Marshall McLuhan predicted the commercial grab of our senses: “Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to
+        feeling and doing. Already in the 1960s the known media theorist Marshall McLuhan predicted the commercial grab of our senses: <mark>Once we have surrendered our senses and nervous systems to the private manipulation of those who would try to
         benefit from taking a lease on our eyes and ears and nerves, we don’t really have any rights left. Leasing our eyes and ears and nerves to commercial interests is like handing over the common speech to a private corporation, or like giving
-        the earth’s atmosphere to a company as a monopoly.”<sup>36</sup>
+        the earth’s atmosphere to a company as a monopoly.</mark>
+<sup id="fnref:36"><a href="#fn:36" class="footnote">36</a></sup>
         <br><br>
         The two main players in the Western AI development, Google and Facebook, are increasingly expanding their business towards neural network-driven approaches. In 2020, Google published the largest-ever map of brain connectivity, tracing 20
         million synapses and connecting 25 000 neurons in the brain of a fly <b>figure18</b>. The goal is to one day be able to map the full connectivity of the human brain. Since long, Google has drifted away from simply providing search results to
         providing accurate user profiles and behavior predictions. Likes, clicks, recommendations and loose privacy settings all aim to gain a better understanding of what we might want to think before we actually think it. As the former Google CEO
-        Eric Schmidt said already in 2010: “I actually think most people don’t want Google to answer their questions […]. They want Google to tell them what they should be doing next.”<sup>37</sup>
+        Eric Schmidt said already in 2010: <mark>I actually think most people don’t want Google to answer their questions […]. They want Google to tell them what they should be doing next</mark>
+<sup id="fnref:37"><a href="#fn:37" class="footnote">37</a></sup>.
         <br><br>
-        Since the prefrontal cortex governs the processes related to attention, prediction and working memory,<sup>38</sup> it becomes a crucial target of the attention economy. Being the last lobe to evolve in the brain, it sits at the top of the
+        Since the prefrontal cortex governs the processes related to attention, prediction and working memory,
+<sup id="fnref:38"><a href="#fn:38" class="footnote">38</a></sup> it becomes a crucial target of the attention economy. Being the last lobe to evolve in the brain, it sits at the top of the
         hierarchy of
-        modulating incoming information according to previous knowledge and expectations, enforcing already learned ways of seeing and responding to the world.<sup>39</sup> Due to this confirmation bias, people have a tendency to discount information
-        that
-        undermines their past knowledge, choices and judgements.<sup>40</sup>
+        modulating incoming information according to previous knowledge and expectations, enforcing already learned ways of seeing and responding to the world
+<sup id="fnref:39"><a href="#fn:39" class="footnote">39</a></sup>.
+Due to this confirmation bias, people have a tendency to discount information that undermines their past knowledge, choices and judgements
+        <sup id="fnref:40"><a href="#fn:40" class="footnote">40</a></sup>.
         <br><br>
         Similarly, the problem with AI is that it assumes that the future is always like the past. By suggesting new content based on previous behavior, confirmation bias emerges in online echo chambers that by design enforce our existing opinions
         and beliefs. At large this can lead to polarized opinions, divided nations and to a so-called “post-truth” society, where objective facts become less influential in shaping public opinion than appeals to personal belief and emotion.
-<br><br>
-        <div class="footnotes">
-          36. Marshall McLuhan, “Medium Is the Message,” <i>Understanding Media; the Extensions of Man</i>, (New York: Signet Books, 1964), 15.
-          <br><br>37. Jenkins Jr. Holman, “Google and the Search for the Future,” <i>The Wall Street Journal</i>, last modified August 14, 2010, www.wsj.com/articles/SB10001424052748704901104575423294099527212.
-          <br><br>38. Neidich, “The Brain Without Organs”, 252.
-          <br><br>39. Ibid. 243.
-          <br><br>40. Andreas Kappes et al., “Confirmation bias in the utilization of others’ opinion strength,” <i>Nature Neuroscience</i>, no. 23, (December 16, 2019), 3.
-        </div>
+        <br><br>
       </p>
     </div>
 
@@ -557,31 +607,41 @@
       </div>
     </div>
 
+
     <div class="zoom-section text inner-shadow">
       <div class="subheading">The Dawn of Dynamic Logic and Nonconscious Cognition</div>
-      <p>In attention economy a hidden paradox exists: the colonization of intelligence has been coupled with the explosion of precognitive decision-making — a process of total appropriation of thinking on behalf of capital.<sup>41</sup> Nonconscious cognition
+      <p>In attention economy a hidden paradox exists: the colonization of intelligence has been coupled with the explosion of precognitive decision-making — a process of total appropriation of thinking on behalf of capital
+        <sup id="fnref:41"><a href="#fn:41" class="footnote">41</a></sup>. Nonconscious
+        cognition
         surpasses conscious deductive reasoning in order to accelerate solution-finding, being a central element in the automated information architecture of today’s communication technologies. In the means of efficiency, these anticipatory
         computational systems influence our gut feeling instead of our higher intellect in order to speed up the process of decision-making and thus the accumulation of capital. When interacting with these systems, our behavior is ruled by
         precognitive decision-making that subconsciously steers our desires and attention, blurring the distinction between automation and autonomy. The neural turn in attention economy makes the affective way of directing and programming human
-        response absolutely central. In a speculative, futuristic video artwork <i>What The Heart Wants</i> from 2016, Cécile B. Evans contemplates the topical question of what it means to be a human in a technology-driven world where software, hardware and
+        response absolutely central. In a speculative, futuristic video artwork <i>What The Heart Wants</i> from 2016, Cécile B. Evans contemplates the topical question of what it means to be a human in a technology-driven world where software,
+        hardware and
         consciousness merge together <b>figure19</b>.
         <br><br>
         Affective technocapitalism has already entered the zone where automated machine intelligence and nonconscious cognitive processes—used by humans, animals and machines alike—challenge the power of human intelligence and consciousness. The
-        deterministic vision of human intelligence which sees all behavior as a result of computable causal chains, entails a vision of an automated subjectivity of machine intelligence.<sup>42</sup> The perfect algorithm following this ideology would replace
+        deterministic vision of human intelligence which sees all behavior as a result of computable causal chains, entails a vision of an automated subjectivity of machine intelligence
+      <sup id="fnref:42"><a href="#fn:42" class="footnote">42</a></sup>.The perfect algorithm following this ideology
+        would replace
         all conscious cognition with a chain of automated reactions achieved by the pre-programmed prediction and manipulation of personal feelings, tastes and opinions.
         Compared to history, today’s computational systems are characterized by a new level of autonomy, in which they
-        select, evaluate and make decisions without human super-vision. Algorithms analyze and compare options, run possible scenarios and perform reasoning through steps that were not implemented to the machine by humans. Like Parisi wrote: “The
+        select, evaluate and make decisions without human super-vision. Algorithms analyze and compare options, run possible scenarios and perform reasoning through steps that were not implemented to the machine by humans. Like Parisi wrote: <mark>The
         computational harnessing of chance is no longer carried out through an application of a pre-constituted formal logic. Instead, the algorithmic capture of uncertainty (i.e. unknown quantities of unpatterned data) involves the speed of
-        nonconscious connection. This avoids the hierarchy of calculation and introduces an immediacy of decision able not only to forecast the future, but also to anticipate (and thus foreclose) chance.”<sup>43</sup>
+        nonconscious connection. This avoids the hierarchy of calculation and introduces an immediacy of decision able not only to forecast the future, but also to anticipate (and thus foreclose) chance</mark>
+        <sup id="fnref:43"><a href="#fn:43" class="footnote">43</a></sup>.
         <br><br>
         What is fascinating about today’s algorithmic automation is that it largely uses patternless data and solves problems by using self-initiated steps. Between the input and the output, patternless information, noise and uncomputable units
-        emerge, making the output larger than the input. The significance of the incomputables was recognized already in 1936 by Alan Turing , who is often seen as the father of computer science and artificial intelligence <b>figure20</b>.<sup>44</sup>
+        emerge, making the output larger than the input. The significance of the incomputables was recognized already in 1936 by Alan Turing , who is often seen as the father of computer science and artificial intelligence
+        <b>figure20</b>
+        <sup id="fnref:44"><a href="#fn:44" class="footnote">44</a></sup>.
         What is noteworthy about this new form of algorithmic intelligence is that it doesn’t only set and perform tasks without human intervention, but also gives birth to a whole new realm of reasoning. Instead of using human-favored deductive
         logic, it uses uncomputable information and experimental truths as a central basis for reasoning.
         <br><br>
-        From the unique characteristics of machine-to-machine communication and rule-based processing of infinite data a new dynamic logic is emerging, forming a mode of reasoning for the age of the algorithm. As Parisi put it: “Here reason does not
+        From the unique characteristics of machine-to-machine communication and rule-based processing of infinite data a new dynamic logic is emerging, forming a mode of reasoning for the age of the algorithm. As Parisi put it: <mark>Here reason does not
         follow the deductive model of thinking, for which truths are confirmed by conceptual explanations that trace problems to a predetermined cause. Instead, the model of reasoning is here characterized by the possibility of generating hypotheses
-        that discover the best possible explanation and revise set parameters according to circumstances.”<sup>45</sup>
+        that discover the best possible explanation and revise set parameters according to circumstances</mark>
+        <sup id="fnref:45"><a href="#fn:45" class="footnote">45</a></sup>.
         <br><br>
         Computation restructures and frames our abilities to socialize, learn, create and develop new cognitive capabilities. Affect, emotion, knowledge, thinking, beliefs and desires have become important parameters in extracting value out of human
         interaction with technology. Sensual and emotional experiences are processed as data which is then traded and finally marketed back to the user as lucrative experiences and lifestyle choices. This production of social and cultural capital is
@@ -591,20 +651,14 @@
         Within these systems human cognition can operate below the level of self-awareness, where the most primitive cognitive mechanisms for thinking, remembering and speaking have a root in bodily perceptions and affections. The capabilities of
         nonconscious cognition are activated to execute actions at a speed that is not accessed by the conscious order of logic. Since networked media has penetrated our precognitive neurological systems, technology will soon if not already now know
         what we want to think, where we want to go and what we want to purchase before we do.
-<br><br>
-        <div class="footnotes">
-41. Luciana Parisi, “Automated Cognition and Capital,” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, ed. Neidich Warren, (Archive Books, 2017), 77.
-<br><br>42. Franco Berardi et al, <i>Precarious Rhapsody: Semiocapitalism and the Pathologies of the Post-Alpha Generation</i>, (London: Minor Compositions, 2009), 36.
-<br><br>43. Parisi, “Automated Cognition and Capital”, 57.
-<br><br>44. Turing, Alan. “On computable numbers, with an application to the Entscheidungsproblem,” <i>Proc. London Math. Soc. 2</i>, no. 42, (1936), 259.
-<br><br>45. Parisi, “Automated Cognition and Capital”, 78.
-        </div></p>
+        <br><br>
+      </p>
     </div>
 
     <div class="zoom-section">
       <div class="wrapper">
         <img class="text-image" src="images/cecile.jpg" />
-        <div class="caption"><b>figure19</b> figure19 Cécile B. Evans, What the Heart Wants. Film still, 2016. MoMa.</div>
+        <div class="caption"><b>figure19</b> figure19 Cécile B. <i>Evans, What the Heart Wants</i>. Film still, 2016. MoMa.</div>
       </div>
     </div>
     <div class="zoom-section">
@@ -615,13 +669,14 @@
       </div>
     </div>
 
-<div class="zoom-section heading"></div>
+    <div class="zoom-section heading"></div>
 
     <div class="zoom-section heading" id="manifesto">
       Hypoconnectivist Manifesto
     </div>
     <div class="zoom-section text inner-shadow">
-      <p class="script">We have entered an era of intangible human traffic,<br>
+      <img class="poem-image" src="images/poem2small.png" /><br>
+      <!--<p class="script">We have entered an era of intangible human traffic,<br>
         where instead of trading our flesh and our muscle power,<br>
         Our digital selves are freely <br>sold and bought on the market.<br>
         Credit card purchases, financial records, <br>employment history, cell phone location,<br>
@@ -664,7 +719,7 @@
         To reclaim your right to think, feel and dream.<br>
         And embrace the taboos of boredom, <br>unproductivity and inefficiency,<br>
         To decolonize your mind <br>from the grasp of the attention economy.<br>
-        <br></p>
+        <br></p>-->
     </div>
 
     <div class="zoom-section heading" id="demandforchange">
@@ -691,81 +746,86 @@
         power of data monopolies and at the same time improve our mental health. But there’s only so much one can do as an individual. Only by fixing the problem from the root can we truly decolonize our brains from the grasp of the attention
         economy. This would mean introducing increased regulation and taxation of the tech industry, alongside with changing their business models and their financial incentives. In the end the commercial algorithms are creating the greatest issues,
         so as consumers we have the power the demand for change. Everyone loves a free service, but in the end a small subscription fee is maybe not such a bad price to pay for one’s autonomy.
-<br><br>
+        <br><br>
       </p>
     </div>
 
+    <div class="zoom-section"></div>
+
     <div class="zoom-section heading" id="bibliography">Bibliography</div>
 
-    <div class="zoom-section text inner-shadow">
-      <p>Berardi, Franco, Erik Empson, Stephen Shukaitis & Arianna Bove. <i>Precarious Rhapsody: Semiocapitalism and the Pathologies of the Post-Alpha Generation.</i> London: Minor Compositions, 2009.
-      <br><br>
-      Cooper, Anderson. “What Is ‘Brain Hacking’? Tech Insiders On Why You Should Care.” <i>CBS News</i>, last modified June 11 2017, accessed December 5, 2020, http://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/.
-      <br><br>
-      Crary, Jonathan. <i>24/7: Late Capitalism and the Ends of Sleep</i>. London: Verso, 1999.
-      <br><br>
-      Elliott, Carl. “The Tyranny of Happiness: Ethics and Cosmetic Psychopharmacology.” In <i>Enhancing Human Traits: Ethical and Social Implications</i>, edited by Erik Parens, 177-188. Georgetown University Press, 2000.
-      <br><br>
-      Gielen, Pascal, “A Chronotopy of Post-Fordist Labor.” <i>In Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Neidich, Warren, 195–220. Archive Books, 2014.
-      <br><br>
-      Goldstein, Kurt. <i>The Organism</i>. New York: American Book Company, 1939.
-      <br><br>
-      Greenfield, Patricia. “Technology and Informal Education: What Is Taught, What Is Learned.” <i>Science 323, no. 5910 (January 2, 2009): 69–71</i>.
-      <br><br>
-      Harari, Yuval Noah. <i>21 Lessons For The 21st Century</i>. VINTAGE, 2019.
-      <br><br>
-      Haynes, Trevor. “Dopamine, Smartphones & You: A battle for your time.” <i>Harvard University Blog</i>, last modified May 1, 2018, accessed November 25, 2020, http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/.
-      <br><br>
-      Holman, Jenkins Jr., “Google and the Search for the Future,” <i>The Wall Street Journal</i>, last modified August 14, 2010, accessed December 5, 2020, http://www.wsj.com/articles/SB10001424052748704901104575423294099527212.
-      <br><br>
-      Huberman, Andrew. “Change Your Brain: Neuroscientist Dr. Andrew Huberman | Rich Roll Podcast.” <i>YouTube</i>, uploaded by Rich Roll, last modified July 20, 2020, accessed Nov 4, 2020, http://www.youtube.com/watch?v=SwQhKFMxmDY&t=5984s.
-      <br><br>
-      Kappes, A., Harvey, A.H., Lohrenz, T. et al. “Confirmation bias in the utilization of others’ opinion strength.” <i>Nature Neuroscience</i>, no. 23, (December 16, 2019): 130–137.
-      <br><br>
-      Klayman, Alison, dir. <i>Take Your Pills</i>. Motto Pictures, 2018. Distributed by Netflix, accessed December 9, 2020, http://www.netflix.com/title/80117831.
-      <br><br>
-      Kramer, Peter D. <i>Listening to Prozac</i>. New York: Penguin Books, 1994.
-      <br><br>
-      Komninos, Andreas, “Our Three Brains — The Reptilian Brain,” <i>Interaction Design Foundation</i>, last modified March, 2020, accessed December 9, 2020, http://www.interaction-design.org/literature/article/our-three-brains-the-reptilian-brain.
-      <br><br>
-      Lanier, Jaron. <i>Ten Arguments for Deleting Your Social Media Accounts Right Now</i>. New York: Henry Holt and Company, 2018.
-      <br><br>
-      Mark, Gloria et al. “The cost of interrupted work: more speed and stress.” <i>CHI ‘08: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems,</i> (April 2008): 107–110.
-      <br><br>
-      McLuhan, Marshall. <i>Understanding Media; the Extensions of Man</i>. New York: Signet Books, 1964.
-      <br><br>
-      “Most Valuable Companies In The World – 2020.” <i>FXSSI</i>. last modified November 3, 2020, accessed November 26, 2020, http://fxssi.com/top-10-most-valuable-companies-in-the-world.
-      <br><br>
-      Mintzer, Ally. “Paying Attention: The Attention Economy.” <i>Berkeley Economic Review</i>, edited by Pedro De Marcos, last modified March 31, 2020, accessed December 7, 2020, http://econreview.berkeley.edu/paying-attention-the-attention-economy/.
-      <br><br>
-      Metzinger, Thomas. <i>The Ego Tunnel: The Science of the Mind and the Myth of the Self</i>. New York: Basic Books, 2009.
-      <br><br>
-      Neidich, Warren. “The Brain Without Organs: Ayahuasca and the Theory of Neural Regression.” <i>Psychopathologies of Cognitive Capitalism, Part Three</i>, edited by Neidich Warren, 223–248. Archive Books, 2017.
-      <br><br>
-      Negri, Antonio. “Reflections on the ‘Manifesto for an Accelerationist Politics,’” <i>e-flux Journal</i>, trans. Matteo Pasquinelli, accessed December 9, 2020,
-      http://www.e-flux.com/journal/53/59877/reflections-on-the-manifesto-for-an-accelerationist-politics/.
-      <br><br>
-      Orlowski, Jeff, dir. <i>The Social Dilemma</i>. Exposure Labs, Argent Pictures & The Space Program, 2020. Distributed by Netflix, accessed December 9, 2020, http://www.netflix.com/watch/81254224.
-      <br><br>
-      Parisi, Luciana. “Automated Cognition and Capital.” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, edited by Neidich Warren, 49-84. Archive Books, 2017.
-      <br><br>
-      Pasquinelli, Matteo. “The Power of Abtraction and its Antagonism: On Some Problems of Contemporary Neuroscience and the Theory of Cognitive Capitalism.” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Neidich, Warren, 275–292.
-      Archive Books, 2014.
-      <br><br>
-      Perez, Darrin. “Skinner’s Box and Video Games: How to Create Addictive Games.” <i>LevelSkip</i>, last modified September 4, 2020, accessed December 9, 2020, http://www.levelskip.com/how-to/Skinners-Box-and-Video-Games.
-      <br><br>
-      Turing, Alan. “On computable numbers, with an application to the Entscheidungsproblem,” <i>Proc. London Math. Soc. 2,</i> no. 42, (1936): 230–265.
-      <br><br>
-      Uncapher, Melina and Anthony Wagner. “Media multitasking, mind and brain.” <i>Proceedings of the National Academy of Sciences 115</i>, no. 40 (October 2, 2018): 9889-9896.
-      <br><br>
-      Urry, John. <i>Sociology Beyond Societies: Mobilities for the Twenty-First Century</i>. London and New York: Routledge, 1999.
-      <br><br>
-      We Are Social. “Digital 2020: Global Digital Overview.” <i>We Are Social</i>. last modified January 30, 2020, accessed November 26, 2020, http://wearesocial.com/blog/2020/01/digital-2020-3-8-billion-people-use-social-media.
-      <br><br>
-      Wexler, Bruce. <i>Brain and Culture: Neuorobiology, Ideology and Social Change</i>. Cambridge: MIT Press, 2006.
-      <br><br>
-      Wolfe, Charles. “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project.” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Warren Neidich, 245–274. Archive Books, 2014.
-      <br><br></p>
+    <div class="zoom-section text inner-shadow caption">
+      <p><br><br>Berardi, Franco, Erik Empson, Stephen Shukaitis & Arianna Bove. <i>Precarious Rhapsody: Semiocapitalism and the Pathologies of the Post-Alpha Generation.</i> London: Minor Compositions, 2009.
+        <br><br>
+        Cooper, Anderson. “What Is ‘Brain Hacking’? Tech Insiders On Why You Should Care.” <i>CBS News</i>, last modified June 11 2017, accessed December 5, 2020, http://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/.
+        <br><br>
+        Crary, Jonathan. <i>24/7: Late Capitalism and the Ends of Sleep</i>. London: Verso, 1999.
+        <br><br>
+        Elliott, Carl. “The Tyranny of Happiness: Ethics and Cosmetic Psychopharmacology.” In <i>Enhancing Human Traits: Ethical and Social Implications</i>, edited by Erik Parens, 177-188. Georgetown University Press, 2000.
+        <br><br>
+        Gielen, Pascal, “A Chronotopy of Post-Fordist Labor.” <i>In Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Neidich, Warren, 195–220. Archive Books, 2014.
+        <br><br>
+        Goldstein, Kurt. <i>The Organism</i>. New York: American Book Company, 1939.
+        <br><br>
+        Greenfield, Patricia. “Technology and Informal Education: What Is Taught, What Is Learned.” <i>Science 323, no. 5910 (January 2, 2009): 69–71</i>.
+        <br><br>
+        Harari, Yuval Noah. <i>21 Lessons For The 21st Century</i>. VINTAGE, 2019.
+        <br><br>
+        Haynes, Trevor. “Dopamine, Smartphones & You: A battle for your time.” <i>Harvard University Blog</i>, last modified May 1, 2018, accessed November 25, 2020, http://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/.
+        <br><br>
+        Holman, Jenkins Jr., “Google and the Search for the Future,” <i>The Wall Street Journal</i>, last modified August 14, 2010, accessed December 5, 2020, http://www.wsj.com/articles/SB10001424052748704901104575423294099527212.
+        <br><br>
+        Huberman, Andrew. “Change Your Brain: Neuroscientist Dr. Andrew Huberman | Rich Roll Podcast.” <i>YouTube</i>, uploaded by Rich Roll, last modified July 20, 2020, accessed Nov 4, 2020, http://www.youtube.com/watch?v=SwQhKFMxmDY&t=5984s.
+        <br><br>
+        Kappes, A., Harvey, A.H., Lohrenz, T. et al. “Confirmation bias in the utilization of others’ opinion strength.” <i>Nature Neuroscience</i>, no. 23, (December 16, 2019): 130–137.
+        <br><br>
+        Klayman, Alison, dir. <i>Take Your Pills</i>. Motto Pictures, 2018. Distributed by Netflix, accessed December 9, 2020, http://www.netflix.com/title/80117831.
+        <br><br>
+        Kramer, Peter D. <i>Listening to Prozac</i>. New York: Penguin Books, 1994.
+        <br><br>
+        Komninos, Andreas, “Our Three Brains — The Reptilian Brain,” <i>Interaction Design Foundation</i>, last modified March, 2020, accessed December 9, 2020,
+        http://www.interaction-design.org/literature/article/our-three-brains-the-reptilian-brain.
+        <br><br>
+        Lanier, Jaron. <i>Ten Arguments for Deleting Your Social Media Accounts Right Now</i>. New York: Henry Holt and Company, 2018.
+        <br><br>
+        Mark, Gloria et al. “The cost of interrupted work: more speed and stress.” <i>CHI ‘08: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems,</i> (April 2008): 107–110.
+        <br><br>
+        McLuhan, Marshall. <i>Understanding Media; the Extensions of Man</i>. New York: Signet Books, 1964.
+        <br><br>
+        “Most Valuable Companies In The World – 2020.” <i>FXSSI</i>. last modified November 3, 2020, accessed November 26, 2020, http://fxssi.com/top-10-most-valuable-companies-in-the-world.
+        <br><br>
+        Mintzer, Ally. “Paying Attention: The Attention Economy.” <i>Berkeley Economic Review</i>, edited by Pedro De Marcos, last modified March 31, 2020, accessed December 7, 2020,
+        http://econreview.berkeley.edu/paying-attention-the-attention-economy/.
+        <br><br>
+        Metzinger, Thomas. <i>The Ego Tunnel: The Science of the Mind and the Myth of the Self</i>. New York: Basic Books, 2009.
+        <br><br>
+        Neidich, Warren. “The Brain Without Organs: Ayahuasca and the Theory of Neural Regression.” <i>Psychopathologies of Cognitive Capitalism, Part Three</i>, edited by Neidich Warren, 223–248. Archive Books, 2017.
+        <br><br>
+        Negri, Antonio. “Reflections on the ‘Manifesto for an Accelerationist Politics,’” <i>e-flux Journal</i>, trans. Matteo Pasquinelli, accessed December 9, 2020,
+        http://www.e-flux.com/journal/53/59877/reflections-on-the-manifesto-for-an-accelerationist-politics/.
+        <br><br>
+        Orlowski, Jeff, dir. <i>The Social Dilemma</i>. Exposure Labs, Argent Pictures & The Space Program, 2020. Distributed by Netflix, accessed December 9, 2020, http://www.netflix.com/watch/81254224.
+        <br><br>
+        Parisi, Luciana. “Automated Cognition and Capital.” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, edited by Neidich Warren, 49-84. Archive Books, 2017.
+        <br><br>
+        Pasquinelli, Matteo. “The Power of Abtraction and its Antagonism: On Some Problems of Contemporary Neuroscience and the Theory of Cognitive Capitalism.” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Neidich, Warren,
+        275–292.
+        Archive Books, 2014.
+        <br><br>
+        Perez, Darrin. “Skinner’s Box and Video Games: How to Create Addictive Games.” <i>LevelSkip</i>, last modified September 4, 2020, accessed December 9, 2020, http://www.levelskip.com/how-to/Skinners-Box-and-Video-Games.
+        <br><br>
+        Turing, Alan. “On computable numbers, with an application to the Entscheidungsproblem,” <i>Proc. London Math. Soc. 2,</i> no. 42, (1936): 230–265.
+        <br><br>
+        Uncapher, Melina and Anthony Wagner. “Media multitasking, mind and brain.” <i>Proceedings of the National Academy of Sciences 115</i>, no. 40 (October 2, 2018): 9889-9896.
+        <br><br>
+        Urry, John. <i>Sociology Beyond Societies: Mobilities for the Twenty-First Century</i>. London and New York: Routledge, 1999.
+        <br><br>
+        We Are Social. “Digital 2020: Global Digital Overview.” <i>We Are Social</i>. last modified January 30, 2020, accessed November 26, 2020, http://wearesocial.com/blog/2020/01/digital-2020-3-8-billion-people-use-social-media.
+        <br><br>
+        Wexler, Bruce. <i>Brain and Culture: Neuorobiology, Ideology and Social Change</i>. Cambridge: MIT Press, 2006.
+        <br><br>
+        Wolfe, Charles. “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project.” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, edited by Warren Neidich, 245–274. Archive Books, 2014.
+        <br><br></p>
     </div>
 
     <div class="zoom-section">
@@ -779,13 +839,230 @@
     </div>
     <div class="zoom-section">
       <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+      <span class="dot"></span>
+    </div>
+    <div class="zoom-section">
+    </div>
+    <div class="zoom-section">
+    </div>
+
+    <div class="footnotes">
+      <ol>
+        <li id="fn:1">
+          <p>1. Marshall McLuhan, “Medium Is the Message,” in <i>Understanding Media; the Extensions of Man</i>, (New York: Signet Books, 1964), 7–23.
+            &nbsp;<a href="#fnref:1" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:2">
+          <p>2. Andreas Komninos, “Our Three Brains — The Reptilian Brain,” <i>Interaction Design Foundation</i>, last modifed March, 2020, <a href="https://www.interaction-design.org/literature/article/our-three-brains-the-reptilian-brain" target="_blank"><u>see online</u></a>
+            &nbsp;<a href="#fnref:2"
+              class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:3">
+          <p> 3. “Most Valuable Companies In The World – 2020,” <i>FXSSI</i>, last modified November 3, 2020, <a href="https://fxssi.com/top-10-most-valuable-companies-in-the-world" target="_blank"><u>see online</u></a>.
+            &nbsp;<a href="#fnref:3" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:4">
+          <p>4. Ally Mintzer, “Paying Attention: The Attention Economy,” <i>Berkeley Economic Review</i>, last modified March 31, 2020,
+            <a href="https://econreview.berkeley.edu/paying-attention-the-attention-economy/" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:4" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:5">
+          <p>5. Jonathan Crary, <i>24/7: Late Capitalism and the Ends of Sleep</i>, (London: Verso, 1999), 33.
+&nbsp;<a href="#fnref:5" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:6">
+          <p>6. John Urry, <i>Sociology Beyond Societies: Mobilities for the Twenty-First Century</i>, (London and New York: Routledge, 1999), 137.
+&nbsp;<a href="#fnref:6" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:7">
+          <p>7. Pascal Gielen, “A Chronotopy of Post-Fordist Labor,” in <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich, (Archive Books, 2014), 195–196.
+&nbsp;<a href="#fnref:7" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:8">
+          <p>8. Yuval Noah Harari, <i>21 Lessons For The 21st Century</i>, (VINTAGE, 2019) 16–17.
+&nbsp;<a href="#fnref:8" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:9">
+          <p>9. Darrin Perez, “Skinner’s Box and Video Games: How to Create Addictive Games.” LevelSkip, last modified September 4, 2020,
+            <a href="https://www.levelskip.com/how-to/Skinners-Box-and-Video-Games" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:9" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:10">
+          <p>10. Anderson Cooper, “What Is ‘Brain Hacking’? Tech Insiders On Why You Should Care,” <i>CBS News</i>, last edited June 11, 2017,
+            <a href="https://www.cbsnews.com/news/brain-hacking-tech-insiders-60-minutes/" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:10" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:11">
+          <p>11. Andrew Huberman, “Change Your Brain: Neuroscientist Dr. Andrew Huberman | Rich Roll Podcast.” <i>YouTube</i>, uploaded by Rich Roll, July 20, 2020,
+            <a href="https://www.youtube.com/watch?v=SwQhKFMxmDY&t=5984s" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:11" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:12">
+          <p>12. Andrew Huberman, “Change Your Brain: Neuroscientist Dr. Andrew Huberman | Rich Roll Podcast.” <i>YouTube</i>, uploaded by Rich Roll, July 20, 2020,
+            <a href="https://www.youtube.com/watch?v=SwQhKFMxmDY&t=5984s" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:12" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:13">
+          <p>13. Trevor Haynes, “Dopamine, Smartphones & You: A battle for your time,” <i>Harvard University Blog</i>, last edited May 1, 2018,
+            <a href="https://sitn.hms.harvard.edu/flash/2018/dopamine-smartphones-battle-time/" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:13" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:14">
+          <p>14. Bruce Wexler, Brain and Culture: Neuorobiology, Ideology and Social Change, (Cambridge: MIT Press, 2006).
+&nbsp;<a href="#fnref:14" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:15">
+          <p>15. The Social Dilemma, directed by Jeff Orlowski, (Exposure Labs, Argent Pictures & The Space Program, 2020), Netflix.
+&nbsp;<a href="#fnref:15" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:16">
+          <p>16. The Social Dilemma, directed by Jeff Orlowski, (Exposure Labs, Argent Pictures & The Space Program, 2020), Netflix.
+&nbsp;<a href="#fnref:16" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:17">
+          <p>17. Jaron Lanier, <i>Ten Arguments for Deleting Your Social Media Accounts Right Now</i>, (New York: Henry Holt and Company, 2018), 27.
+&nbsp;<a href="#fnref:17" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:18">
+          <p>18. Gloria Mark, <i>The cost of interrupted work: more speed and stress</i>, (CHI, 2008), 3.
+&nbsp;<a href="#fnref:18" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:19">
+          <p>19. Gloria Mark, <i>The cost of interrupted work: more speed and stress</i>, (CHI, 2008), 3.
+&nbsp;<a href="#fnref:19" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:20">
+          <p>20. Melina Uncapher & Anthony Wagner, “Media multitasking, mind and brain.” <i>Proceedings of the National Academy of Sciences 115</i>, no. 40 (October 2, 2018) 9889-9896.
+&nbsp;<a href="#fnref:20" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:21">
+          <p>21. Melina Uncapher & Anthony Wagner, “Media multitasking, mind and brain.” <i>Proceedings of the National Academy of Sciences 115</i>, no. 40 (October 2, 2018) 9889.
+&nbsp;<a href="#fnref:21" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:22">
+          <p>22. Mark, “The Cost of Interrupted Work,” 3.
+&nbsp;<a href="#fnref:22" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:23">
+          <p>23. Cooper, “What is ‘Brain Hacking’?”
+&nbsp;<a href="#fnref:23" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:24">
+          <p>24. Patricia Greenfield, “Technology and Informal Education: What Is Taught, What Is Learned,” <i>Science 323</i>, no. 5910 (January 2, 2009), 69.
+&nbsp;<a href="#fnref:24" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:25">
+          <p>25. Warren Neidich, “The Brain Without Organs: Ayahuasca and the Theory of Neural Regression.” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, ed. Warren Neidich (Archive Books, 2017), 229.
+&nbsp;<a href="#fnref:25" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:26">
+          <p>26. Warren Neidich, “The Brain Without Organs: Ayahuasca and the Theory of Neural Regression.” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, ed. Warren Neidich (Archive Books, 2017), 230.
+&nbsp;<a href="#fnref:1" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:27">
+          <p>27. Charles Wolfe, “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project,” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich (Archive Books, 2014), 251.
+&nbsp;<a href="#fnref:27" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:28">
+          <p>28. Thomas Metzinger, <i>The Ego Tunnel: The Science of the Mind and the Myth of the Self</i>, (New York: Basic Books, 2009), 234.
+&nbsp;<a href="#fnref:28" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:29">
+          <p>29. Gielen, “A Chronotopy of Post-Fordist Labor”, 196.
+&nbsp;<a href="#fnref:29" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:30">
+          <p>30. Charles Wolfe, “Cultured Brains and the Production of Subjectivity: The Politics of Affect(s) as an Unfinished Project,” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren Neidich, (Archive Books, 2014), 251.
+&nbsp;<a href="#fnref:30" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:31">
+          <p>31. Matteo Pasquinelli, “The Power of Abtraction and its Antagonism: On Some Problems of Contemporary Neuroscience and the Theory of Cognitive Capitalism” <i>Psychopathologies of Cognitive Capitalism: Part Two</i>, ed. Warren
+&nbsp;<a href="#fnref:31" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:32">
+          <p>32. Kurt Goldstein, <i>The Organism</i>, (New York: American Book Company, 1939).
+&nbsp;<a href="#fnref:32" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:33">
+          <p>33. Peter Kramer, Listening to Prozac, (New York: Penguin Books, 1994).&nbsp;<a href="#fnref:33" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:34">
+          <p>34. Carl Elliott, “The Tyranny of Happiness: Ethics and Cosmetic Psycho-pharmacology.” Enhancing human traits: Ethical and Social Implications,
+ed. Erik Parens, (Georgetown University Press, 2000), 178.
+&nbsp;<a href="#fnref:34" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:35">
+          <p>34. Carl Elliott, “The Tyranny of Happiness: Ethics and Cosmetic Psycho-pharmacology.” Enhancing human traits: Ethical and Social Implications,
+ed. Erik Parens, (Georgetown University Press, 2000), 187.&nbsp;<a href="#fnref:35" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:36">
+          <p>36. Marshall McLuhan, “Medium Is the Message,” Understanding Media; the Extensions of Man, (New York: Signet Books, 1964), 15.
+            &nbsp;<a href="#fnref:36" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:37">
+          <p>37. Jenkins Jr. Holman, “Google and the Search for the Future,” <i>The Wall Street Journal</i>, last modified August 14, 2010,
+            <a href="https://www.wsj.com/articles/SB100014240527-48704901104575423294099527212" target="_blank"><u>see online</u></a>.
+&nbsp;<a href="#fnref:37" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:38">
+          <p>38. Neidich, “The Brain Without Organs”, 252.
+&nbsp;<a href="#fnref:38" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:39">
+          <p>39. Neidich, “The Brain Without Organs”, 245.
+            &nbsp;<a href="#fnref:39" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:40">
+          <p> 40. Andreas Kappes et al., “Confirmation bias in the utilization of others’ opinion strength,” <i>Nature Neuroscience</i>, no. 23, (December 16, 2019), 3.
+            &nbsp;<a href="#fnref:40" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:41">
+          <p>41. Luciana Parisi, “Automated Cognition and Capital,” <i>Psychopathologies of Cognitive Capitalism: Part Three</i>, ed. Neidich Warren, (Archive Books, 2017), 77.
+            &nbsp;<a href="#fnref:41" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:42">
+          <p>42. Franco Berardi et al, <i>Precarious Rhapsody: Semiocapitalism and the Pathologies of the Post-Alpha Generation</i>, (London: Minor Compositions, 2009), 36.
+            &nbsp;<a href="#fnref:42" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:43">
+          <p>43. Parisi, “Automated Cognition and Capital”, 57.
+            &nbsp;<a href="#fnref:43" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:44">
+          <p>44. Turing, Alan. “On computable numbers, with an application to the Entscheidungsproblem,” <i>Proc. London Math. Soc. 2</i>, no. 42, (1936), 259.
+            &nbsp;<a href="#fnref:44" class="reversefootnote">↩</a></p>
+        </li>
+        <li id="fn:45">
+          <p>45. Parisi, “Automated Cognition and Capital”, 78.
+            &nbsp;<a href="#fnref:45" class="reversefootnote">↩</a></p>
+        </li>
+      </ol>
     </div>
 
   </div>
   <!--end zoom-->
 
   <!-- partial -->
-  <script src="./script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/bigfoot.js'></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/bigfoot.js"></script>
+  <script type="text/javascript">
+    $.bigfoot();
+  </script>
 
 </body>
 
